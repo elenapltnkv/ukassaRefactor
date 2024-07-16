@@ -1,0 +1,7 @@
+host=https://api.yookassa.ru/v3/payments
+username= 359240
+token =test_xjhYEg858jF0R1zaYQtdkWYODrm9Hq7T8qysiaDX-P8
+
+junit.jupiter.execution.parallel.enabled = true
+junit.jupiter.execution.parallel.mode.default = concurrent
+junit.jupiter.execution.parallel.mode.classes.default = same_thread
