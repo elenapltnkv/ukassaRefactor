@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PayoutNegativeTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PayoutNegativeTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ru.elenapltnkvtest.test.html">ru.elenapltnkvtest.test</a> &gt; PayoutNegativeTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5.713s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="payoutCancelCardExpireTest()"></a>
+<h3 class="failures">Проверка отклонения платежа 'card_expired'</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1705)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:176)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:260)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at ru.elenapltnkvtest.test.PayoutNegativeTest.payoutCancelCardExpireTest(PayoutNegativeTest.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Проверка отклонения платежа 'card_expired'</td>
+<td class="failures">payoutCancelCardExpireTest()</td>
+<td class="failures">5.713s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request URI:	https://api.yookassa.ru/v3/payments
+Headers:		Idempotence-Key=cdfe9869-baa4-4461-8f78-aa5946b57667
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:
+{
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;1.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;payment_method_data&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;card&quot;: {
+            &quot;cardholder&quot;: &quot;MR CARDHOLDER&quot;,
+            &quot;csc&quot;: &quot;213&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;number&quot;: &quot;5555555555554543&quot;
+        }
+    },
+    &quot;confirmation&quot;: {
+        &quot;type&quot;: &quot;redirect&quot;,
+        &quot;return_url&quot;: &quot;https://www.example.com/return_url&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;
+}
+HTTP/1.1 400 
+Server: nginx
+Date: Thu, 18 Jul 2024 12:38:54 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 292
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2e2b209e 1 MGQCMHrZG3VK76rEqNZMR/qoA6Z8fIpaMtDx/EkpnG8qrv0hn9Y9DdDUTaL4xOwWbCkDUAIwNxSRgBXBVxtEan7WwY65cNBTMsb+wJo3sD4Lc8g++Gr2aou65EBJiQFRaEp+Qu6i
+
+{
+    &quot;type&quot;: &quot;error&quot;,
+    &quot;id&quot;: &quot;eacf953f-1b4c-4b47-a35b-3f7c363bc17d&quot;,
+    &quot;code&quot;: &quot;invalid_request&quot;,
+    &quot;description&quot;: &quot;You've already used this idempotence key for another request within the past 24 hours. Repeat the request with another idempotence key&quot;,
+    &quot;parameter&quot;: &quot;Idempotence-Key&quot;
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 18 июл. 2024 г., 15:39:00</p>
+</div>
+</div>
+</body>
+</html>

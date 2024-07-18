@@ -1,0 +1,1 @@
+{"uuid":"37869b42-1f74-435c-be4a-a04a047f78ab","name":"Проверка отклонения платежа 'canceled_by_merchant'","children":["34efc8ab-e2fd-439d-9288-ed581f42ebd2"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1721306294255,"stop":1721306299256}],"afters":[],"start":1721306294252,"stop":1721306299687}

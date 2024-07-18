@@ -1,0 +1,1 @@
+{"uuid":"55d7a772-4a24-4269-8893-91a1d2494867","name":"Проверка отклонения платежа 'card_expired'","children":["03f24bf9-c041-4471-8b8f-beec7caee667"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1721306242974,"stop":1721306247974}],"afters":[],"start":1721306242968,"stop":1721306248869}

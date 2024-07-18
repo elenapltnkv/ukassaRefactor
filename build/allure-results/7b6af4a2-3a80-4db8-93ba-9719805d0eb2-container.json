@@ -1,0 +1,1 @@
+{"uuid":"7b6af4a2-3a80-4db8-93ba-9719805d0eb2","name":"Проверка успешного платежа","children":["e20781a7-dcae-4e31-a82a-6b868b97a5f0"],"befores":[{"name":"beforeEach","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1721306334682,"stop":1721306339682}],"afters":[],"start":1721306334677,"stop":1721306340141}

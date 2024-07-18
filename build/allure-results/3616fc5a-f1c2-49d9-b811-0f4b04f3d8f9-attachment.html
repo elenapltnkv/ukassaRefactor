@@ -1,0 +1,62 @@
+<div>POST to https://api.yookassa.ru/v3/payments</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;1.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;payment_method_data&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;card&quot;: {
+            &quot;cardholder&quot;: &quot;MR CARDHOLDER&quot;,
+            &quot;csc&quot;: &quot;213&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;number&quot;: &quot;5555555555554543&quot;
+        }
+    },
+    &quot;confirmation&quot;: {
+        &quot;type&quot;: &quot;redirect&quot;,
+        &quot;return_url&quot;: &quot;https://www.example.com/return_url&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==</div>
+        <div>Accept: */*</div>
+        <div>Idempotence-Key: 9f552610-732d-406e-abe9-a1c22182d4cc</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://api.yookassa.ru/v3/payments&#39; -H &#39;Authorization: Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==&#39; -H &#39;Accept: */*&#39; -H &#39;Idempotence-Key: 9f552610-732d-406e-abe9-a1c22182d4cc&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;1.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;payment_method_data&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;card&quot;: {
+            &quot;cardholder&quot;: &quot;MR CARDHOLDER&quot;,
+            &quot;csc&quot;: &quot;213&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;number&quot;: &quot;5555555555554543&quot;
+        }
+    },
+    &quot;confirmation&quot;: {
+        &quot;type&quot;: &quot;redirect&quot;,
+        &quot;return_url&quot;: &quot;https://www.example.com/return_url&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;
+}&#39;
+</div>

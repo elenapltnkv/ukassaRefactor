@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.elenapltnkvtest.test.PayoutCardPositiveConfirmTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-07-18T12:38:54" hostname="user" time="5.457">
+  <properties/>
+  <testcase name="Проверка успешного платежа" classname="ru.elenapltnkvtest.test.PayoutCardPositiveConfirmTest" time="5.457">
+    <failure message="java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;cancellation_details&quot; (class dao.DataRespModel), not marked as ignorable (13 known properties: &quot;created_at&quot;, &quot;paid&quot;, &quot;metadata&quot;, &quot;status&quot;, &quot;amount&quot;, &quot;recipient&quot;, &quot;payment_method&quot;, &quot;id&quot;, &quot;description&quot;, &quot;expires_at&quot;, &quot;test&quot;, &quot;authorization_details&quot;, &quot;refundable&quot;])&#10; at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 35, column: 29] (through reference chain: dao.DataRespModel[&quot;cancellation_details&quot;])" type="java.lang.RuntimeException">java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;cancellation_details&quot; (class dao.DataRespModel), not marked as ignorable (13 known properties: &quot;created_at&quot;, &quot;paid&quot;, &quot;metadata&quot;, &quot;status&quot;, &quot;amount&quot;, &quot;recipient&quot;, &quot;payment_method&quot;, &quot;id&quot;, &quot;description&quot;, &quot;expires_at&quot;, &quot;test&quot;, &quot;authorization_details&quot;, &quot;refundable&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 35, column: 29] (through reference chain: dao.DataRespModel[&quot;cancellation_details&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at ru.elenapltnkvtest.test.PayoutCardPositiveConfirmTest.readInfo(PayoutCardPositiveConfirmTest.java:62)
+	at ru.elenapltnkvtest.test.PayoutCardPositiveConfirmTest.payoutConfirmTest(PayoutCardPositiveConfirmTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;cancellation_details&quot; (class dao.DataRespModel), not marked as ignorable (13 known properties: &quot;created_at&quot;, &quot;paid&quot;, &quot;metadata&quot;, &quot;status&quot;, &quot;amount&quot;, &quot;recipient&quot;, &quot;payment_method&quot;, &quot;id&quot;, &quot;description&quot;, &quot;expires_at&quot;, &quot;test&quot;, &quot;authorization_details&quot;, &quot;refundable&quot;])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 35, column: 29] (through reference chain: dao.DataRespModel[&quot;cancellation_details&quot;])
+	at app//com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at app//com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153)
+	at app//com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2224)
+	at app//com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1793)
+	at app//com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1771)
+	at app//com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316)
+	at app//com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at app//com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at app//com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4899)
+	at app//com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3846)
+	at app//io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 14 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[Request URI:	https://api.yookassa.ru/v3/payments
+Headers:		Idempotence-Key=cdfe9869-baa4-4461-8f78-aa5946b57667
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:
+{
+    "amount": {
+        "value": "1.00",
+        "currency": "RUB"
+    },
+    "payment_method_data": {
+        "type": "bank_card",
+        "card": {
+            "cardholder": "MR CARDHOLDER",
+            "csc": "213",
+            "expiry_month": "01",
+            "expiry_year": "2020",
+            "number": "5555555555554444"
+        }
+    },
+    "confirmation": {
+        "type": "redirect",
+        "return_url": "https://www.example.com/return_url"
+    },
+    "description": "Заказ №74"
+}
+HTTP/1.1 200 
+Server: nginx
+Date: Thu, 18 Jul 2024 12:38:59 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 1111
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2e2b20a3 1 MGQCMDAZ5lIklKao51OvfSRlvnLilLjlU11gJnauptC8yQQQu77n+ZFJWbM+AKzdKIMCXwIwf8J8P17FS7o3mH9B9So2Y9d6r7Po5x3PrOX2V1yA1LpQoCSbbvwmCcNq3wMiYgw/
+Strict-Transport-Security: max-age=15768000
+
+{
+    "id": "2e2b2095-000f-5000-a000-1df825185d6f",
+    "status": "canceled",
+    "amount": {
+        "value": "1.00",
+        "currency": "RUB"
+    },
+    "description": "Заказ №74",
+    "recipient": {
+        "account_id": "359240",
+        "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+        "id": "2e2b2095-000f-5000-a000-1df825185d6f",
+        "saved": false,
+        "title": "Bank card *4444",
+        "card": {
+            "first6": "555555",
+            "last4": "4444",
+            "expiry_year": "2020",
+            "expiry_month": "01",
+            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+            "issuer_country": "US"
+        }
+    },
+    "created_at": "2024-07-18T12:38:45.880Z",
+    "test": true,
+    "paid": false,
+    "refundable": false,
+    "metadata": {
+        
+    },
+    "cancellation_details": {
+        "party": "merchant",
+        "reason": "canceled_by_merchant"
+    },
+    "authorization_details": {
+        "rrn": "258717354984639",
+        "auth_code": "386789",
+        "three_d_secure": {
+            "applied": false,
+            "method_completed": false,
+            "challenge_completed": false
+        }
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

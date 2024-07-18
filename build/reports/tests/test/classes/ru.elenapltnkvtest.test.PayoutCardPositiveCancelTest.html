@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PayoutCardPositiveCancelTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PayoutCardPositiveCancelTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ru.elenapltnkvtest.test.html">ru.elenapltnkvtest.test</a> &gt; PayoutCardPositiveCancelTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">11.989s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Проверка отклонения платежа 'canceled_by_merchant'</td>
+<td class="success">payoutCancelByMerchantTest()</td>
+<td class="success">11.989s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request URI:	https://api.yookassa.ru/v3/payments
+Headers:		Idempotence-Key=cdfe9869-baa4-4461-8f78-aa5946b57667
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:
+{
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;1.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;payment_method_data&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;card&quot;: {
+            &quot;cardholder&quot;: &quot;MR CARDHOLDER&quot;,
+            &quot;csc&quot;: &quot;213&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;number&quot;: &quot;5555555555554444&quot;
+        }
+    },
+    &quot;confirmation&quot;: {
+        &quot;type&quot;: &quot;redirect&quot;,
+        &quot;return_url&quot;: &quot;https://www.example.com/return_url&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;
+}
+HTTP/1.1 200 
+Server: nginx
+Date: Thu, 18 Jul 2024 12:38:46 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 1068
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2e2b2096 1 MGQCMCuGTgJeT9N/ccd2BXV4PrfPZKE8LSmD0bJ61RxvvscIrCN33XMBS/rjfJ9B+RRHmgIwPJRONhJ0I9201iKKL+9ZJ0UzXcueHbb9oO50ipffyLgWO3lBWCkfFvb23enthc57
+Strict-Transport-Security: max-age=15768000
+
+{
+    &quot;id&quot;: &quot;2e2b2095-000f-5000-a000-1df825185d6f&quot;,
+    &quot;status&quot;: &quot;waiting_for_capture&quot;,
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;1.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;,
+    &quot;recipient&quot;: {
+        &quot;account_id&quot;: &quot;359240&quot;,
+        &quot;gateway_id&quot;: &quot;2215148&quot;
+    },
+    &quot;payment_method&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;id&quot;: &quot;2e2b2095-000f-5000-a000-1df825185d6f&quot;,
+        &quot;saved&quot;: false,
+        &quot;title&quot;: &quot;Bank card *4444&quot;,
+        &quot;card&quot;: {
+            &quot;first6&quot;: &quot;555555&quot;,
+            &quot;last4&quot;: &quot;4444&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;card_type&quot;: &quot;MasterCard&quot;,
+            &quot;card_product&quot;: {
+                &quot;code&quot;: &quot;E&quot;
+            },
+            &quot;issuer_country&quot;: &quot;US&quot;
+        }
+    },
+    &quot;created_at&quot;: &quot;2024-07-18T12:38:45.880Z&quot;,
+    &quot;expires_at&quot;: &quot;2024-07-25T12:38:46.609Z&quot;,
+    &quot;test&quot;: true,
+    &quot;paid&quot;: true,
+    &quot;refundable&quot;: false,
+    &quot;metadata&quot;: {
+        
+    },
+    &quot;authorization_details&quot;: {
+        &quot;rrn&quot;: &quot;258717354984639&quot;,
+        &quot;auth_code&quot;: &quot;386789&quot;,
+        &quot;three_d_secure&quot;: {
+            &quot;applied&quot;: false,
+            &quot;method_completed&quot;: false,
+            &quot;challenge_completed&quot;: false
+        }
+    }
+}
+Request URI:	https://api.yookassa.ru/v3/payments/2e2b2095-000f-5000-a000-1df825185d6f/cancel
+Headers:		Idempotence-Key=cdfe9869-baa4-4461-8f78-aa5946b57667
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:			&lt;none&gt;
+HTTP/1.1 200 
+Server: nginx
+Date: Thu, 18 Jul 2024 12:38:47 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 1111
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2e2b2097 1 MGQCMFn5mlkr+RQJupQdvkdeGK4aFIi3HFWURrvEO3l0cAXndiOSXaCQFItrx49affPtRgIwfOjqIzTgizptvF5i8NQoiSNTsxycDtQHlrXCP4jmwDrYzmE9hotatzRIMCxCJmjp
+Strict-Transport-Security: max-age=15768000
+
+{
+    &quot;id&quot;: &quot;2e2b2095-000f-5000-a000-1df825185d6f&quot;,
+    &quot;status&quot;: &quot;canceled&quot;,
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;1.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;,
+    &quot;recipient&quot;: {
+        &quot;account_id&quot;: &quot;359240&quot;,
+        &quot;gateway_id&quot;: &quot;2215148&quot;
+    },
+    &quot;payment_method&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;id&quot;: &quot;2e2b2095-000f-5000-a000-1df825185d6f&quot;,
+        &quot;saved&quot;: false,
+        &quot;title&quot;: &quot;Bank card *4444&quot;,
+        &quot;card&quot;: {
+            &quot;first6&quot;: &quot;555555&quot;,
+            &quot;last4&quot;: &quot;4444&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;card_type&quot;: &quot;MasterCard&quot;,
+            &quot;card_product&quot;: {
+                &quot;code&quot;: &quot;E&quot;
+            },
+            &quot;issuer_country&quot;: &quot;US&quot;
+        }
+    },
+    &quot;created_at&quot;: &quot;2024-07-18T12:38:45.880Z&quot;,
+    &quot;test&quot;: true,
+    &quot;paid&quot;: false,
+    &quot;refundable&quot;: false,
+    &quot;metadata&quot;: {
+        
+    },
+    &quot;cancellation_details&quot;: {
+        &quot;party&quot;: &quot;merchant&quot;,
+        &quot;reason&quot;: &quot;canceled_by_merchant&quot;
+    },
+    &quot;authorization_details&quot;: {
+        &quot;rrn&quot;: &quot;258717354984639&quot;,
+        &quot;auth_code&quot;: &quot;386789&quot;,
+        &quot;three_d_secure&quot;: {
+            &quot;applied&quot;: false,
+            &quot;method_completed&quot;: false,
+            &quot;challenge_completed&quot;: false
+        }
+    }
+}
+Request URI:	https://api.yookassa.ru/v3/payments/2e2b2095-000f-5000-a000-1df825185d6f
+Headers:		Idempotence-Key=cdfe9869-baa4-4461-8f78-aa5946b57667
+				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+				Content-Type=application/json
+Body:			&lt;none&gt;
+HTTP/1.1 200 
+Server: nginx
+Date: Thu, 18 Jul 2024 12:38:48 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 1111
+Connection: keep-alive
+Keep-Alive: timeout=12
+Signature: v1 2e2b2098 1 MGQCMARNXL/pXCiER09ZjFl/QdGUjAO3VmPjYvbvxRwnUPROVMTDd+JJ9jU+YmlRkpZ81QIwDRpJawaElX89meUYnBMT5f0y6MRxzw3HYLljXxb7XuT3S3xcvdCap34bt6CbDOjY
+Strict-Transport-Security: max-age=15768000
+
+{
+    &quot;id&quot;: &quot;2e2b2095-000f-5000-a000-1df825185d6f&quot;,
+    &quot;status&quot;: &quot;canceled&quot;,
+    &quot;amount&quot;: {
+        &quot;value&quot;: &quot;1.00&quot;,
+        &quot;currency&quot;: &quot;RUB&quot;
+    },
+    &quot;description&quot;: &quot;Заказ №74&quot;,
+    &quot;recipient&quot;: {
+        &quot;account_id&quot;: &quot;359240&quot;,
+        &quot;gateway_id&quot;: &quot;2215148&quot;
+    },
+    &quot;payment_method&quot;: {
+        &quot;type&quot;: &quot;bank_card&quot;,
+        &quot;id&quot;: &quot;2e2b2095-000f-5000-a000-1df825185d6f&quot;,
+        &quot;saved&quot;: false,
+        &quot;title&quot;: &quot;Bank card *4444&quot;,
+        &quot;card&quot;: {
+            &quot;first6&quot;: &quot;555555&quot;,
+            &quot;last4&quot;: &quot;4444&quot;,
+            &quot;expiry_year&quot;: &quot;2020&quot;,
+            &quot;expiry_month&quot;: &quot;01&quot;,
+            &quot;card_type&quot;: &quot;MasterCard&quot;,
+            &quot;card_product&quot;: {
+                &quot;code&quot;: &quot;E&quot;
+            },
+            &quot;issuer_country&quot;: &quot;US&quot;
+        }
+    },
+    &quot;created_at&quot;: &quot;2024-07-18T12:38:45.880Z&quot;,
+    &quot;test&quot;: true,
+    &quot;paid&quot;: false,
+    &quot;refundable&quot;: false,
+    &quot;metadata&quot;: {
+        
+    },
+    &quot;cancellation_details&quot;: {
+        &quot;party&quot;: &quot;merchant&quot;,
+        &quot;reason&quot;: &quot;canceled_by_merchant&quot;
+    },
+    &quot;authorization_details&quot;: {
+        &quot;rrn&quot;: &quot;258717354984639&quot;,
+        &quot;auth_code&quot;: &quot;386789&quot;,
+        &quot;three_d_secure&quot;: {
+            &quot;applied&quot;: false,
+            &quot;method_completed&quot;: false,
+            &quot;challenge_completed&quot;: false
+        }
+    }
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 18 июл. 2024 г., 15:39:00</p>
+</div>
+</div>
+</body>
+</html>
