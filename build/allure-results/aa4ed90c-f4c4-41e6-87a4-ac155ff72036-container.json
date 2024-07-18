@@ -1,1 +1,0 @@
-{"uuid":"aa4ed90c-f4c4-41e6-87a4-ac155ff72036","name":"PayoutCardPositiveCancelTest","children":["9051a3f4-6985-48d7-b7b3-33cea8bc6c33"],"befores":[{"name":"beforeAll","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1721142678515,"stop":1721142679595}],"afters":[],"start":1721142678441,"stop":1721142693479}
