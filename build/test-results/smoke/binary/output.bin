@@ -1,5 +1,5 @@
 1Request URI:	https://api.yookassa.ru/v3/payments
-?Headers:		Idempotence-Key=ca2c7db7-9ad9-4968-87cb-af246fd99d31
+?Headers:		Idempotence-Key=2cdd638d-59ff-4f59-bb58-8d93170c6563
 e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
 				Accept=*/*
 "				Content-Type=application/json
@@ -28,16 +28,16 @@
 }
 HTTP/1.1 200 
 Server: nginx
-$Date: Thu, 18 Jul 2024 09:07:54 GMT
+$Date: Thu, 18 Jul 2024 10:28:07 GMT
 -Content-Type: application/json;charset=UTF-8
 Content-Length: 1068
 Connection: keep-alive
 Keep-Alive: timeout=12
-�Signature: v1 2e2aef2a 1 MGQCMDdHGNfA1i3sPOKX4ffA2q7PenSSi2nQ6JokCjpPrtgLvCp3FJheLLatppC2A0S4iAIwXul947rvIEgoerXRZePRGVw3y2iSFUIWxpJFpmUTnFGoHobslQOxjeDGIlzzTNUR
+�Signature: v1 2e2b01f7 1 MGQCMEGtkgvEjPjOIS3MicTkhLi/k3aA8jpSFwlIVj6OYxNXM4KWusgazkBUyGJU4PqB5AIwTI44yLaS96qFD03RZjapRr9a691nygDaVggAxvHiPiGcWjwOdLRALiMqYQabf8kq
 ,Strict-Transport-Security: max-age=15768000
 
 {
-2    "id": "2e2aef29-000f-5000-8000-1f6733d08138",
+2    "id": "2e2b01f6-000f-5000-8000-1e0c9212b422",
 %    "status": "waiting_for_capture",
     "amount": {
         "value": "1.00",
@@ -50,7 +50,7 @@
     },
     "payment_method": {
         "type": "bank_card",
-6        "id": "2e2aef29-000f-5000-8000-1f6733d08138",
+6        "id": "2e2b01f6-000f-5000-8000-1e0c9212b422",
         "saved": false,
 $        "title": "Bank card *4444",
         "card": {
@@ -66,8 +66,8 @@
 
         }
     },
-.    "created_at": "2024-07-18T09:07:53.531Z",
-.    "expires_at": "2024-07-25T09:07:54.060Z",
+.    "created_at": "2024-07-18T10:28:06.025Z",
+.    "expires_at": "2024-07-25T10:28:07.554Z",
     "test": true,
     "paid": true,
     "refundable": false,
@@ -75,8 +75,8 @@
 	        
     },
     "authorization_details": {
-"        "rrn": "182470030929528",
-        "auth_code": "695245",
+"        "rrn": "507821553095949",
+        "auth_code": "555160",
         "three_d_secure": {
             "applied": false,
 '            "method_completed": false,
@@ -85,8 +85,8 @@
         }
     }
 }
-^Request URI:	https://api.yookassa.ru/v3/payments/2e2aef29-000f-5000-8000-1f6733d08138/capture
-?Headers:		Idempotence-Key=ca2c7db7-9ad9-4968-87cb-af246fd99d31
+^Request URI:	https://api.yookassa.ru/v3/payments/2e2b01f6-000f-5000-8000-1e0c9212b422/capture
+?Headers:		Idempotence-Key=2cdd638d-59ff-4f59-bb58-8d93170c6563
 e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
 				Accept=*/*
 "				Content-Type=application/json
@@ -99,16 +99,16 @@
 }
 HTTP/1.1 200 
 Server: nginx
-$Date: Thu, 18 Jul 2024 09:07:58 GMT
+$Date: Thu, 18 Jul 2024 10:28:12 GMT
 -Content-Type: application/json;charset=UTF-8
 Content-Length: 1204
 Connection: keep-alive
 Keep-Alive: timeout=12
-�Signature: v1 2e2aef2e 1 MGQCMG6eybAvQJTS5aI0CyB5U5APgTkdabGHJ4uqWw85PagebhEfOuVAaUDDWItH+fEdeAIwb+kPz3hWypAnJriheD42wRryhxSNQBi3rSCgh4SnScr6g+P5XGu52zNGQZGFGiJL
+�Signature: v1 2e2b01fc 1 MGQCMHQSUZLqBBi/u66Wjv7mXO4C+CBDFqDlpdWpHpQdJ85pGeVNUlml3E4nseBH+KgA8wIwNtQkMSKtoRnxxC9E0oFWLUMWfd6GEnLjQsivGjyXP0Wjgbi0TCkAlMAY119+zacl
 ,Strict-Transport-Security: max-age=15768000
 
 {
-2    "id": "2e2aef29-000f-5000-8000-1f6733d08138",
+2    "id": "2e2b01f6-000f-5000-8000-1e0c9212b422",
     "status": "succeeded",
     "amount": {
         "value": "1.00",
@@ -125,4 +125,116 @@
     },
     "payment_method": {
         "type": "bank_card",
-6        "id": "2e2aef29-000f-5000-8000-1
+6        "id": "2e2b01f6-000f-5000-8000-1e0c9212b422",
+        "saved": false,
+$        "title": "Bank card *4444",
+        "card": {
+             "first6": "555555",
+            "last4": "4444",
+#            "expiry_year": "2020",
+"            "expiry_month": "01",
+'            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+#            "issuer_country": "US"
+
+        }
+    },
+/    "captured_at": "2024-07-18T10:28:10.069Z",
+.    "created_at": "2024-07-18T10:28:06.025Z",
+    "test": true,
+    "refunded_amount": {
+        "value": "0.00",
+        "currency": "RUB"
+    },
+    "paid": true,
+    "refundable": true,
+    "metadata": {
+	        
+    },
+    "authorization_details": {
+"        "rrn": "507821553095949",
+        "auth_code": "555160",
+        "three_d_secure": {
+            "applied": false,
+'            "method_completed": false,
+)            "challenge_completed": false
+
+        }
+    }
+}
+@Запрашиваем информацию о платеже: 
+VRequest URI:	https://api.yookassa.ru/v3/payments/2e2b01f6-000f-5000-8000-1e0c9212b422
+?Headers:		Idempotence-Key=2cdd638d-59ff-4f59-bb58-8d93170c6563
+e				Authorization=Basic MzU5MjQwOnRlc3RfeGpoWUVnODU4akYwUjF6YVlRdGRrV1lPRHJtOUhxN1Q4cXlzaWFEWC1QOA==
+				Accept=*/*
+"				Content-Type=application/json
+Body:			<none>
+HTTP/1.1 200 
+Server: nginx
+$Date: Thu, 18 Jul 2024 10:28:12 GMT
+-Content-Type: application/json;charset=UTF-8
+Content-Length: 1204
+Connection: keep-alive
+Keep-Alive: timeout=12
+�Signature: v1 2e2b01fc 1 MGQCMHOLyVaVjVIYZ4MzkmaC8/eqGaq/jjTdieO+SyDRmw2sx9VJ8LaLtAodfF512uRHzwIwG80AVf2FhemxNxXyLzxpRBbX4gxieZt0ZiRkvKsZvPR7yZm9XXwSsh2wOBG0vqhX
+,Strict-Transport-Security: max-age=15768000
+
+{
+2    "id": "2e2b01f6-000f-5000-8000-1e0c9212b422",
+    "status": "succeeded",
+    "amount": {
+        "value": "1.00",
+        "currency": "RUB"
+    },
+    "income_amount": {
+        "value": "0.96",
+        "currency": "RUB"
+    },
+'    "description": "Заказ №74",
+    "recipient": {
+         "account_id": "359240",
+         "gateway_id": "2215148"
+    },
+    "payment_method": {
+        "type": "bank_card",
+6        "id": "2e2b01f6-000f-5000-8000-1e0c9212b422",
+        "saved": false,
+$        "title": "Bank card *4444",
+        "card": {
+             "first6": "555555",
+            "last4": "4444",
+#            "expiry_year": "2020",
+"            "expiry_month": "01",
+'            "card_type": "MasterCard",
+            "card_product": {
+                "code": "E"
+            },
+#            "issuer_country": "US"
+
+        }
+    },
+/    "captured_at": "2024-07-18T10:28:10.069Z",
+.    "created_at": "2024-07-18T10:28:06.025Z",
+    "test": true,
+    "refunded_amount": {
+        "value": "0.00",
+        "currency": "RUB"
+    },
+    "paid": true,
+    "refundable": true,
+    "metadata": {
+	        
+    },
+    "authorization_details": {
+"        "rrn": "507821553095949",
+        "auth_code": "555160",
+        "three_d_secure": {
+            "applied": false,
+'            "method_completed": false,
+)            "challenge_completed": false
+
+        }
+    }
+}
