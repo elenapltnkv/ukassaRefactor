@@ -63,6 +63,7 @@ public class PayoutCardPositiveConfirmTest extends BaseTest {
         payment_id = dataRespModel.getId();
     }
     @Tag("smoke")
+    @Tag("positive")
     @Feature("Позитивные тесты")
     @Story("Succeeded payout")
     @Owner("samigullaeva.ea")
