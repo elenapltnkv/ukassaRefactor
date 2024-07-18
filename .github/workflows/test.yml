@@ -27,7 +27,7 @@ jobs:
       # запускаем тесты
       - run: gradle clean negative
           # скачиваем историю тестов
-          #- uses: actions/checkout@v3
+        #- uses: actions/checkout@v3
         #if: always()
         #continue-on-error: true
         #with:
@@ -45,6 +45,6 @@ jobs:
           #- uses: peaceiris/actions-gh-pages@v3
           #if: always()
           #env:
-          #PERSONAL_TOKEN: ${{ secrets.SAMIGULLAEVA_ELENA }}
-          #PUBLISH_BRANCH: gh-pages
-          #PUBLISH_DIR: allure-history
+        PERSONAL_TOKEN: ${{ secrets.SAMIGULLAEVA_ELENA }}
+        #PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: allure-history
