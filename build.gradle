@@ -56,6 +56,11 @@ task smoke(type: Test) {
     }
 }
 
+task positive(type: Test) {
+    useJUnitPlatform {
+        includeTags("positive")
+    }
+}
 task negative(type: Test) {
     useJUnitPlatform {
         includeTags("negative")
